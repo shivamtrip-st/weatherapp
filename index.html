@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="images/mist.png" alt="" class="nav-logo">
+            <h1 class="nav-title">Weather App</h1>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="card">
+   
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name" spellcheck="false">
+            <button id="searchButton">
+                <img src="images/search.png" alt="Search">
+            </button>
+            <button id="geoLocationButton">
+                <p>Get Current Location</p>
+            </button>
+            
+        </div>
+        <div class="toggle">
+            <label for="unitToggle" data-unit="°C">Temperature Unit:</label>
+            <label class="switch">
+                <input type="checkbox" id="unitToggle">
+                <span class="slider"></span>
+            </label>
+        
+            <span class="selected-unit">°C</span>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon" alt="Weather Icon">
+            <h1 class="temp">Loading...</h1>
+            <h2 class="city">New York</h2>
+            <p class="weather-description">Loading...</p>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="Humidity Icon">
+                    <div>
+                        <p class="humidity">Loading...</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <img src="images/wind.png" alt="Wind Icon">
+                    <div>
+                        <p class="wind-speed">Loading...</p>
+                        <p>Wind Speed</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="error-message"></div>
+                <div class="location-error">
+                  
+                </div>
+        </div>
+    </div>
+    <div class="forecast">
+        <h2 class="forecast-heading">6-Day Forecast</h2>
+        <div class="forecast-cards">
+          
+        </div>
+    </div></div>
+</main>
+<footer>
+    <p>Made by shivam</p>
+</footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
